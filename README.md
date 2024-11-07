@@ -34,3 +34,19 @@ Nesta etapa de apresentação, foi utilizado o serviço AWS Athena. Este por sua
 
 Uma vez criada a tabela para consultas, foram realizadas as análises propostas
 
+--> Levantamento da quantidade de mensagens enviadas por dia
+![Athena - Consulta de msg por dia](https://github.com/user-attachments/assets/c3b59317-2665-46a8-b02f-c9336aa01c98)
+
+--> Levantamento da quantidade de mensagens enviadas por dia por usuário
+![Athena - Consulta de msg por usuário por dia](https://github.com/user-attachments/assets/38180871-1069-4e10-8cc2-8af868ae1ab5)
+
+--> Levantamento do tamanho das mensagens por usuário por dia
+![Athena - Consulta de tamanho de msg por usuário por dia](https://github.com/user-attachments/assets/f3404534-e856-4956-a723-adda9f58f626)
+
+--> Levantamento da quantidade de mensagens por hora e por dia da semana
+![Athena - Consulta de msg por hora e por dia da semana](https://github.com/user-attachments/assets/3690de9d-1595-4dbe-b905-aef97a2a9203)
+
+
+
+
+
