@@ -15,7 +15,7 @@ Com os buckets criados e a primeira função Lambda pronta, foi criado uma API d
 
 **2.ETL (Extração, Transformação e Carregamento)**
 
-Nesta etapa os dados passa por um processo recorrente de data wrangling onde o dado é limpo, parcionado e pronto para ser analisado. No projeto, as mensagens de um único dia, já persistidas no processo de ingestão, serão compactas em um único arquivo, orientado a coluna e comprimido, que será persistido em uma camada enriquecida. Para isso, foi utilizado outra função Lambda e o outro bucket criado na etapa anterior, onde os dados processados pela função serão armazenados. A função tem como objetivo listar todos os arquivos JSON de uma única partição do bucket com os dados originais, onde para cada arquivo listado, faz o download do arquivo, executa uma função wrangling (disposta no final do código) e cria uma tabela do PyArrow contatenando com as demais.
+Nesta etapa os dados passam por um processo recorrente de data wrangling onde o dado é limpo, parcionado e pronto para ser analisado. No projeto, as mensagens de um único dia, já persistidas no processo de ingestão, serão compactas em um único arquivo, orientado a coluna e comprimido, que será persistido em uma camada enriquecida. Para isso, foi utilizado outra função Lambda e o outro bucket criado na etapa anterior, onde os dados processados pela função serão armazenados. A função tem como objetivo listar todos os arquivos JSON de uma única partição do bucket com os dados originais, onde para cada arquivo listado, faz o download do arquivo, executa uma função wrangling (disposta no final do código) e cria uma tabela do PyArrow contatenando com as demais.
 
 Por fim, o AWS Event Brigde opera a função de agendador, onde este ativa diariamente a função do ETL.
 
